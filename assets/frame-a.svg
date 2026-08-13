@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring Accent -->
+  <rect x="15" y="15" width="970" height="970" rx="40" fill="none" stroke="#FEE101" stroke-width="10" opacity="0.9" />
+  
+  <!-- Outer Corner Tech Accents -->
+  <path d="M 40 100 L 40 40 L 100 40" fill="none" stroke="#FEE101" stroke-width="6" stroke-linecap="round" />
+  <path d="M 960 100 L 960 40 L 900 40" fill="none" stroke="#FEE101" stroke-width="6" stroke-linecap="round" />
+  <path d="M 40 900 L 40 960 L 100 960" fill="none" stroke="#FF007A" stroke-width="6" stroke-linecap="round" />
+  <path d="M 960 900 L 960 960 L 900 960" fill="none" stroke="#FF007A" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Center Circular Viewport Border -->
+  <circle cx="500" cy="430" r="365" fill="none" stroke="#FEE101" stroke-width="18" filter="url(#shadow)" />
+  <circle cx="500" cy="430" r="376" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.6" />
+
+  <!-- Top Event Pill Badge -->
+  <g transform="translate(300, 35)" filter="url(#shadow)">
+    <rect x="0" y="0" width="400" height="54" rx="27" fill="#026834" stroke="#FEE101" stroke-width="4" />
+    <text x="200" y="34" text-anchor="middle" font-family="'Space Mono', monospace" font-weight="700" font-size="18" fill="#FEE101" letter-spacing="3">
+      GOA, INDIA • 28-31 OCT 2026
+    </text>
+  </g>
+
+  <!-- Bottom Column Banner Container (Integrated for User Details) -->
+  <g transform="translate(70, 800)" filter="url(#shadow)">
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="860" height="155" rx="26" fill="#02582C" stroke="#FEE101" stroke-width="5" />
+    <rect x="4" y="4" width="852" height="147" rx="22" fill="none" stroke="rgba(254,225,1,0.2)" stroke-width="2" />
+    
+    <!-- Subtitle / Hashtag Footer Line -->
+    <text x="430" y="138" text-anchor="middle" font-family="'Space Mono', monospace" font-weight="700" font-size="16" fill="#FEE101" letter-spacing="3">
+      2:47 PM STUDIO • #FrameInGoa
+    </text>
+  </g>
+</svg>
