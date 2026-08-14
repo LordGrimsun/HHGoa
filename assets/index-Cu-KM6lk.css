@@ -374,3 +374,29 @@ body, .app-body {
 video.lp-modal-video, video.preloaded-video, video.bg-video {
   display: none !important;
 }
+
+/* ---------------------------------------------------- */
+/* LANDING PAGE BG OVERRIDES FOR SUNSET BEACH           */
+/* ---------------------------------------------------- */
+
+.lp-page, .lp-bg, .app-main-container {
+  background: linear-gradient(180deg, #101216 0%, #3e1b75 35%, #e52b50 65%, #feea00 100%) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.lp-preloader {
+  background: #101216 !important;
+}
+
+:root {
+  --lp-green: #3e1b75 !important;
+  --lp-green-dark: #101216 !important;
+  --lp-green-deep: #101216 !important;
+}
+
+/* Ensure body has the gradient too */
+body {
+  background: linear-gradient(180deg, #101216 0%, #3e1b75 35%, #e52b50 65%, #feea00 100%) !important;
+  background-attachment: fixed !important;
+}
