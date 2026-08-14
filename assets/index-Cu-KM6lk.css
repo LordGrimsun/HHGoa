@@ -627,3 +627,114 @@ body {
   text-transform: uppercase !important;
   display: block !important;
 }
+
+/* ---------------------------------------------------- */
+/* PASS CARD SUNSET GRADIENT DESIGN OVERRIDES           */
+/* ---------------------------------------------------- */
+
+/* Override card container to use the beautiful sunset gradient */
+.hh-card-container {
+  background: linear-gradient(180deg, #101216 0%, #3e1b75 35%, #e52b50 65%, #feea00 100%) !important;
+  border: 6px solid #000000 !important;
+  box-shadow: 12px 12px 0px 0px #000000 !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+}
+
+/* Hide the baked-in green template image background */
+.hh-card-background {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide the unused cream cover-up banners */
+.hh-custom-title-bg, .hh-custom-class-bg {
+  display: none !important;
+}
+
+/* Style the top header title space-brotherss on the card */
+.hh-custom-title-text {
+  position: absolute !important;
+  top: 7% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 90% !important;
+  text-align: center !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  font-size: clamp(18px, 5cqi, 34px) !important;
+  color: #ffffff !important; /* Crisp white for contrast */
+  text-shadow: 3px 3px 0px #000000 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  z-index: 9 !important;
+}
+
+/* Give the photo frame a solid thick border */
+.hh-photo-frame {
+  border: 4px solid #000000 !important;
+  box-shadow: 6px 6px 0px 0px #000000 !important;
+  background: #ffffff !important;
+}
+
+/* Redesign Name overlay into a solid yellow Neo-brutalist badge */
+.hh-name-overlay {
+  background: #FFD600 !important;
+  border: 3.5px solid #000000 !important;
+  border-radius: 16px !important;
+  box-shadow: 5px 5px 0px 0px #000000 !important;
+  height: 6.5% !important;
+  top: 62% !important;
+  padding: 0 !important;
+}
+
+.hh-name-text {
+  color: #000000 !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+  font-size: clamp(10px, 3.8cqi, 26px) !important;
+}
+
+/* Redesign Role overlay into a solid mint green Neo-brutalist badge */
+.hh-role-overlay {
+  background: #3ae2b0 !important;
+  border: 3px solid #000000 !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  height: 4.8% !important;
+  top: 69.5% !important;
+  padding: 0 !important;
+}
+
+.hh-role-text {
+  color: #000000 !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 800 !important;
+  text-shadow: none !important;
+}
+
+/* Style QR code container like a stickered badge */
+.hh-qr-overlay {
+  background: #ffffff !important;
+  border: 3px solid #000000 !important;
+  border-radius: 16px !important;
+  box-shadow: 5px 5px 0px 0px #000000 !important;
+  padding: 6px !important;
+}
+
+/* Style Builder ID overlay as a custom tag */
+.hh-builder-id-overlay {
+  background: #ffffff !important;
+  border: 2.5px solid #000000 !important;
+  border-radius: 10px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  height: 3.5% !important;
+  padding: 0 4px !important;
+}
+
+.hh-id-text {
+  color: #000000 !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 800 !important;
+}
