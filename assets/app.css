@@ -1177,3 +1177,17 @@ body {
 .lp-subbar-left, .lp-subbar-right {
   flex-shrink: 0;
 }
+
+/* ---------------------------------------------------- */
+/* REMOVE LANDING HERO TRANSPARENT CARD BOX             */
+/* ---------------------------------------------------- */
+
+.lp-hero-inner {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+  gap: clamp(1.2rem, 3.5vw, 3.5rem) !important;
+}
