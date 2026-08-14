@@ -1,6 +1,27 @@
 <!doctype html>
 html lang="en">
   <head>
+    <!-- Force clear service workers and caches -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister().then(function() {
+              console.log('Service worker unregistered successfully.');
+            });
+          }
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (let name of names) {
+            caches.delete(name);
+            console.log('Cache storage cleared:', name);
+          }
+        });
+      }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space Brotherss | Builder Cards</title>
@@ -26,7 +47,7 @@ html lang="en">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/app.css">
+    <link rel="stylesheet" href="/assets/app.css?v=46788">
   </head>
   <body>
     <!-- Beach & Sunset Background Decorations -->
@@ -282,6 +303,6 @@ html lang="en">
     </div>
 
     <!-- Custom Script -->
-    <script src="/assets/app.js"></script>
+    <script src="/assets/app.js?v=46788"></script>
   </body>
 </html>
