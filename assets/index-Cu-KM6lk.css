@@ -480,3 +480,108 @@ body {
   box-shadow: 3px 3px 0px 0px #000000 !important;
   border-radius: 8px !important;
 }
+
+/* ---------------------------------------------------- */
+/* CROP PREVIEW & CARD OVERLAYS CUSTOM OVERRIDES        */
+/* ---------------------------------------------------- */
+
+/* Make the photo crop preview circle much larger and easier to see */
+.crop-preview-circle {
+  width: 220px !important;
+  height: 220px !important;
+  border: 4px solid #000000 !important;
+  box-shadow: 6px 6px 0px 0px #000000 !important;
+  border-radius: 50% !important;
+  margin: 10px auto !important;
+  float: none !important;
+}
+
+/* Adjust crop preview card layout to fit the larger circle */
+.crop-preview-body {
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 20px !important;
+  padding: 10px 0 !important;
+}
+
+.crop-controls-group {
+  width: 100% !important;
+  max-width: 450px !important;
+}
+
+.zoom-slider-row {
+  width: 100% !important;
+  margin: 12px 0 !important;
+}
+
+.zoom-slider {
+  height: 8px !important;
+  border: 2px solid #000000 !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+/* Make card container larger on desktop */
+.hh-card-wrapper {
+  max-width: 600px !important;
+}
+
+/* ---------------------------------------------------- */
+/* CARD OVERLAY WRITING SYSTEM (COVER-UPS)              */
+/* ---------------------------------------------------- */
+
+/* Covers the baked-in "HACKER GOA HOUSE" text */
+.hh-custom-title-bg {
+  position: absolute !important;
+  top: 13.5% !important;
+  left: 8% !important;
+  width: 84% !important;
+  height: 6% !important;
+  background-color: #faf3e4 !important; /* Matches template background */
+  z-index: 8 !important;
+}
+
+.hh-custom-title-text {
+  position: absolute !important;
+  top: 16.5% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 80% !important;
+  text-align: center !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  font-size: clamp(14px, 4.2cqi, 32px) !important;
+  color: #000000 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  z-index: 9 !important;
+}
+
+/* Covers the baked-in "TERMINAL WIZARD" text */
+.hh-custom-class-bg {
+  position: absolute !important;
+  top: 77.8% !important;
+  left: 4.8% !important;
+  width: 23.5% !important;
+  height: 4% !important;
+  background-color: #faf3e4 !important; /* Matches template background */
+  z-index: 8 !important;
+}
+
+.hh-custom-class-text {
+  position: absolute !important;
+  top: 79.8% !important;
+  left: 16.5% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 23% !important;
+  text-align: center !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 800 !important;
+  font-size: clamp(6px, 2.1cqi, 11px) !important;
+  color: #e52b50 !important; /* Matches original red */
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  z-index: 9 !important;
+}
