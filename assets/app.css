@@ -1257,3 +1257,129 @@ body {
   height: 4% !important;
   top: 88% !important;
 }
+
+/* ---------------------------------------------------- */
+/* PERFECT ALIGNED OVERLAYS FOR SUNSET GREEN TEMPLATE   */
+/* ---------------------------------------------------- */
+
+.hh-card-background {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.hh-card-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Photo Frame inside the circular template boundary */
+.hh-photo-frame {
+  position: absolute !important;
+  top: 42.0% !important; /* Perfect vertical center */
+  left: 50.0% !important; /* Perfect horizontal center */
+  width: 53.0% !important; /* Matches template circle diameter */
+  aspect-ratio: 1 !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 5 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+/* Name Overlay inside the dark green banner */
+.hh-name-overlay {
+  position: absolute !important;
+  top: 65.0% !important;
+  left: 25.0% !important;
+  width: 50.0% !important;
+  height: 5.5% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 10 !important;
+}
+
+.hh-name-text {
+  color: #ffffff !important; /* Crisp white text on dark green */
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  font-size: clamp(10px, 4.4cqi, 28px) !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  text-align: center !important;
+}
+
+/* Role/Designation Overlay inside the yellow banner */
+.hh-role-overlay {
+  position: absolute !important;
+  top: 71.5% !important;
+  left: 35.0% !important;
+  width: 30.0% !important;
+  height: 3.5% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 10 !important;
+}
+
+.hh-role-text {
+  color: #000000 !important; /* Bold black text on yellow */
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 800 !important;
+  font-size: clamp(8px, 3.2cqi, 20px) !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  text-align: center !important;
+}
+
+/* QR Code in bottom-left box */
+.hh-qr-overlay {
+  position: absolute !important;
+  top: 91.2% !important;
+  left: 17.8% !important;
+  width: 14.5% !important;
+  aspect-ratio: 1 !important;
+  transform: translate(-50%, -50%) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 10 !important;
+}
+
+/* Builder ID in bottom-right box */
+.hh-builder-id-overlay {
+  position: absolute !important;
+  top: 90.8% !important;
+  left: 81.0% !important;
+  width: 22.0% !important;
+  height: 3.0% !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 10 !important;
+}
+
+.hh-id-text {
+  color: #063725 !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 800 !important;
+  font-size: clamp(6px, 2.5cqi, 11px) !important;
+  letter-spacing: 0.02em !important;
+}
