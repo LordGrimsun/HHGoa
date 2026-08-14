@@ -1191,3 +1191,69 @@ body {
   padding: 0 !important;
   gap: clamp(1.2rem, 3.5vw, 3.5rem) !important;
 }
+
+/* ---------------------------------------------------- */
+/* REMOVE CARD BACKGROUND TEMPLATE IMAGE                */
+/* ---------------------------------------------------- */
+
+.hh-card-background {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.hh-card-container {
+  background: #f7f4ed !important; /* Blank warm cream background card */
+  border: 4px solid #000000 !important;
+  border-radius: 24px !important;
+  box-shadow: 10px 10px 0px 0px #000000 !important;
+}
+
+/* Ensure placeholder and photo frame are styled nicely on blank card */
+.hh-photo-frame {
+  border: 3.5px solid #000000 !important;
+  background: #ffffff !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+}
+
+.hh-name-overlay {
+  background: #FFD600 !important;
+  border: 3px solid #000000 !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  top: 64% !important;
+}
+
+.hh-name-text {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+.hh-role-overlay {
+  background: #3ae2b0 !important;
+  border: 3.5px solid #000000 !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  top: 72% !important;
+}
+
+.hh-role-text {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+.hh-qr-overlay {
+  background: #ffffff !important;
+  border: 3px solid #000000 !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  padding: 4px !important;
+}
+
+.hh-builder-id-overlay {
+  background: #ffffff !important;
+  border: 2px solid #000000 !important;
+  border-radius: 8px !important;
+  box-shadow: 3px 3px 0px 0px #000000 !important;
+  height: 4% !important;
+  top: 88% !important;
+}
