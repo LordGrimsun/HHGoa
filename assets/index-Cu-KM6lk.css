@@ -400,3 +400,83 @@ body {
   background: linear-gradient(180deg, #101216 0%, #3e1b75 35%, #e52b50 65%, #feea00 100%) !important;
   background-attachment: fixed !important;
 }
+
+/* ---------------------------------------------------- */
+/* HEADER & BRANDING FINE TUNING                        */
+/* ---------------------------------------------------- */
+
+/* Override Check Hype to remove its box outline and make it a link style */
+.lp-check-hype-btn {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  text-decoration: underline !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  cursor: pointer !important;
+  padding: 6px 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.lp-check-hype-btn:hover {
+  color: #FFD600 !important;
+  background: transparent !important;
+  transform: scale(1.05) !important;
+}
+
+/* Override Logo Button to remove the box container */
+.lp-logo-btn {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  outline: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Beautiful custom gradient logo text styling with beach palm icon */
+.logo-text {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  font-size: 1.15rem !important;
+  letter-spacing: 0.05em !important;
+  background: linear-gradient(45deg, #FF5A5F, #FFD600, #3ae2b0) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: 2px 2px 0px #000000 !important;
+  padding: 4px 0 !important;
+  display: inline-block !important;
+}
+
+.logo-text::before {
+  content: '🌴 ' !important;
+  -webkit-text-fill-color: initial !important; /* Preserve emoji colors */
+}
+
+/* Keep header slim and small */
+:root {
+  --lp-logo-h: 2rem !important;
+  --lp-pad-y-header: 0.5rem !important;
+}
+
+.lp-header, .app-header {
+  padding: 8px 16px !important;
+}
+
+/* Slimmer Create Button to fit the slim header */
+.lp-create-btn {
+  height: 36px !important;
+  font-size: 0.8rem !important;
+  padding: 0 14px !important;
+  border: 2px solid #000000 !important;
+  box-shadow: 3px 3px 0px 0px #000000 !important;
+  border-radius: 8px !important;
+}
