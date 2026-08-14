@@ -585,3 +585,45 @@ body {
   text-transform: uppercase !important;
   z-index: 9 !important;
 }
+
+/* ---------------------------------------------------- */
+/* READABILITY & BACKGROUND ALIGNMENTS OVERRIDES        */
+/* ---------------------------------------------------- */
+
+/* Fix footer white-on-cream text readability */
+.lp-footer, .app-footer, 
+.lp-footer-links, .lp-footer-sub, 
+.lp-footer-white, .lp-footer-hash, .lp-footer-bullet {
+  color: #000000 !important;
+}
+
+/* Ensure the second screen (workspace) has transparent backgrounds to show the fixed beach decorations */
+.app-body, .app-main-container {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Keep logo styling identical on the workspace header */
+.brand-title {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 900 !important;
+  font-size: 1.15rem !important;
+  letter-spacing: 0.05em !important;
+  background: linear-gradient(45deg, #FF5A5F, #FFD600, #3ae2b0) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: 2px 2px 0px #000000 !important;
+  display: inline-block !important;
+  text-transform: uppercase !important;
+}
+
+.brand-subtitle {
+  color: #000000 !important;
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 0.7rem !important;
+  opacity: 0.8 !important;
+  text-transform: uppercase !important;
+  display: block !important;
+}
