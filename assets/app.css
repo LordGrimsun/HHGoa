@@ -1066,3 +1066,114 @@ body {
     display: none;
   }
 }
+
+/* ---------------------------------------------------- */
+/* ORIGINAL HACKER HOUSE HERO STYLES                    */
+/* ---------------------------------------------------- */
+
+.lp-hero {
+  position: relative;
+  z-index: 10;
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: clamp(.5rem, 2vw, 1.5rem);
+  padding-left: var(--lp-pad-x);
+  padding-right: var(--lp-pad-x);
+}
+
+.lp-hero-inner {
+  text-align: center;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(.75rem, 2vw, 2rem);
+}
+
+.lp-hero-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  user-select: none;
+}
+
+.lp-title-img-box {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.lp-hacker-house-img {
+  height: clamp(5rem, 17vw, 17rem);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 10;
+  animation: lpTitleGlow 7s ease-in-out infinite;
+  will-change: filter;
+}
+
+@keyframes lpTitleGlow {
+  0%, 100% { filter: drop-shadow(0 0 clamp(14px, 2vw, 36px) rgba(254, 225, 1, .35)); }
+  50% { filter: drop-shadow(0 0 clamp(22px, 3vw, 52px) rgba(254, 225, 1, .6)); }
+}
+
+.lp-stamp-wrap {
+  position: absolute;
+  left: 54%;
+  top: 58%;
+  z-index: 20;
+  pointer-events: none;
+  animation: lpStampFloat 5.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes lpStampFloat {
+  0%, 100% { transform: translate(-50%, -50%) rotate(9deg); }
+  50% { transform: translate(-50%, calc(-50% - clamp(6px, 1.2vw, 14px))) rotate(9deg); }
+}
+
+.lp-stamp-img {
+  height: clamp(3rem, 9.6vw, 12rem);
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 clamp(10px, 2vw, 28px) rgba(255, 0, 122, .9));
+}
+
+.lp-subbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(.5rem, 2vw, 1rem);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: #feea00 !important;
+  letter-spacing: .09em;
+  font-size: clamp(.65rem, 1.25vw, 1.05rem);
+  padding: clamp(.6rem, 1.3vw, 1rem) clamp(1rem, 2.5vw, 1.75rem);
+  border-top: 1px solid rgba(254, 225, 1, .28);
+  border-bottom: 1px solid rgba(254, 225, 1, .28);
+  background: rgba(1, 18, 8, 0.5) !important;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: clamp(.5rem, 1.5vw, 1.25rem);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 8px 24px rgba(0,0,0,0.18);
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.3;
+}
+
+.lp-subbar-left, .lp-subbar-right {
+  flex-shrink: 0;
+}
