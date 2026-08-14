@@ -1,2 +1,5 @@
 .vercel
 assets/Prehype.mp4
+
+.vercel
+.env*
