@@ -532,20 +532,20 @@ body {
 /* CARD OVERLAY WRITING SYSTEM (COVER-UPS)              */
 /* ---------------------------------------------------- */
 
-/* Covers the baked-in "HACKER GOA HOUSE" text */
+/* Covers the baked-in "HACKER GOA HOUSE" text completely */
 .hh-custom-title-bg {
   position: absolute !important;
-  top: 13.5% !important;
+  top: 11.2% !important;
   left: 8% !important;
   width: 84% !important;
-  height: 6% !important;
+  height: 10.2% !important;
   background-color: #faf3e4 !important; /* Matches template background */
   z-index: 8 !important;
 }
 
 .hh-custom-title-text {
   position: absolute !important;
-  top: 16.5% !important;
+  top: 16.2% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   width: 80% !important;
