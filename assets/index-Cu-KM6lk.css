@@ -855,3 +855,11 @@ body {
   font-family: monospace !important;
   font-weight: 700 !important;
 }
+
+/* ---------------------------------------------------- */
+/* REMOVE TOP CARD OVERLAY BRANDING                     */
+/* ---------------------------------------------------- */
+
+.hh-custom-title-bg, .hh-custom-title-text {
+  display: none !important;
+}
